@@ -1,15 +1,34 @@
 import { createRouter, createWebHistory } from '@ionic/vue-router';
-import Home from '../views/Home.vue'
+import Discover from '../pages/Discover.vue'
+import Browse from '../pages/Browse.vue'
+import Favorites from '../pages/Favorites.vue'
+import More from '../pages/More.vue'
+
 
 const routes = [
   {
     path: '/',
-    redirect: '/home'
+    redirect: '/discover'
   },
   {
-    path: '/home',
-    name: 'Home',
-    component: Home
+    path: '/discover',
+    name: 'Discover',
+    component: Discover
+  },
+  {
+    path: '/browse',
+    name: 'Browse',
+    component: Browse
+  },
+  {
+    path: '/favorites',
+    name: 'Favorites',
+    component: Favorites
+  },
+  {
+    path: '/more',
+    name: 'More',
+    component: More
   }
 ]
 
