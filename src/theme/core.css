@@ -1,0 +1,29 @@
+.fixed {
+    position: absolute;
+    bottom: 0;
+    top: 92vh;
+    width: 100%;
+    height: auto;
+    background: blue;
+}
+.container {
+    overflow-y: auto;
+    height: 100vh;
+    padding-bottom: 10vh;
+}
+
+img
+{
+    max-width: 100%;
+    height: auto;
+}
+
+.flex
+{
+    display: flex;
+    flex-flow: row wrap;
+}
+.bold
+{
+    font-weight: bolder;
+}

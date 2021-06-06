@@ -1,27 +1,47 @@
 <template>
-  <ion-page>
+<ion-page>
     <ion-header>
-      <ion-toolbar>
-        <ion-title>Browse</ion-title>
-      </ion-toolbar>
+        <ion-toolbar>
+            <ion-title>Browse</ion-title>
+        </ion-toolbar>
     </ion-header>
-    <ion-content class="ion-padding">Browse Tab</ion-content>
-    <tab-menu></tab-menu>
-  </ion-page>
+    <div class="container">
+        <ion-content class="ion-padding">
+            <p>Brows</p>
+        </ion-content>
+
+    </div>
+    <tab-menu class="fixed"></tab-menu>
+</ion-page>
 </template>
 
 <script>
-import { defineComponent } from 'vue';
 import {
-  IonContent,
-  IonHeader,
-  IonPage,
-  IonTitle,
-  IonToolbar
+    defineComponent
+
+} from 'vue';
+
+import {
+    IonHeader,
+    IonPage,
+    IonTitle,
+    IonToolbar
 } from '@ionic/vue';
 
 export default defineComponent({
     name: 'browse',
-  components: { IonContent, IonHeader, IonPage, IonTitle, IonToolbar }
+    components: {
+        IonHeader,
+        IonPage,
+        IonTitle,
+        IonToolbar
+    },
 });
 </script>
+
+<style scoped>
+.brow {
+
+    overflow: auto;
+}
+</style>

@@ -3,7 +3,7 @@ import Discover from '../pages/Discover.vue'
 import Browse from '../pages/Browse.vue'
 import Favorites from '../pages/Favorites.vue'
 import More from '../pages/More.vue'
-
+import LocationPage from '../pages/LocationPage.vue'
 
 const routes = [
   {
@@ -15,6 +15,8 @@ const routes = [
     name: 'Discover',
     component: Discover
   },
+  { path: '/discover/:location', component: Discover },
+  { path: '/location', component: LocationPage },
   {
     path: '/browse',
     name: 'Browse',

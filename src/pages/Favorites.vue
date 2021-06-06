@@ -7,7 +7,7 @@
     </ion-header>
 
     <ion-content class="ion-padding">Favorites Tab</ion-content>
-    <tab-menu></tab-menu>
+    <ion-content><tab-menu></tab-menu></ion-content> 
   </ion-page>
 </template>
 

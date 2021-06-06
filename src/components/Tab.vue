@@ -5,6 +5,7 @@
             <ion-tab-button tab="discover" href="/discover">
                 <ion-icon :icon="compassOutline"></ion-icon>
                 <ion-label>Discover</ion-label>
+
             </ion-tab-button>
 
             <ion-tab-button tab="browse" href="/browse">
@@ -28,7 +29,7 @@
 
 <script>
 import {
-    defineComponent
+    defineComponent,
 } from 'vue';
 import {
     IonIcon,

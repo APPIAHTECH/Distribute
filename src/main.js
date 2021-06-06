@@ -2,8 +2,9 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router';
 import Tab from './components/Tab.vue';
-
 import { IonicVue } from '@ionic/vue';
+
+import store from './store/index'
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/vue/css/core.css';
@@ -27,9 +28,10 @@ import './theme/core.css';
 
 
 const app = createApp(App)
+  .use(store)
   .use(IonicVue)
   .use(router);
-  
+
 app.component('tab-menu', Tab);
 router.isReady().then(() => {
   app.mount('#app');

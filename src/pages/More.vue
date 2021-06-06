@@ -7,7 +7,7 @@
     </ion-header>
 
     <ion-content class="ion-padding">More Tab</ion-content>
-    <tab-menu></tab-menu>
+    <ion-content><tab-menu></tab-menu></ion-content> 
   </ion-page>
 </template>
 
