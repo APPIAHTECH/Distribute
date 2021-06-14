@@ -34,20 +34,17 @@
                         <ion-text color="dark">
                             <h4 class="bold">Recommended for you <ion-button size="small" id="btn-see" shape="round" color="none">See all</ion-button>
                             </h4>
-
                         </ion-text>
-                        <ListFood type="recommended"></ListFood>
+                        <ListFood type="recommended" :location='$store.state.foods.city.localization'></ListFood>
                     </ion-col>
-
                 </ion-row>
-
                 <ion-row>
                     <ion-col>
                         <ion-text color="dark">
                             <h4 class="bold">Pick up for dinner <ion-button size="small" id="btn-see" shape="round" color="none">See all</ion-button>
                             </h4>
                         </ion-text>
-                        <ListFood type="dinner"></ListFood>
+                        <ListFood type="dinner" :location='$store.state.foods.city.localization'></ListFood>
                     </ion-col>
                 </ion-row>
             </ion-grid>

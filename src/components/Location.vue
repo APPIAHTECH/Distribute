@@ -66,7 +66,9 @@ export default {
             this.finalAddress = address
             this.address = ""
         },
-
+        changeFood(val) {
+            this.$store.commit('setLocation', val)
+        },
         setLocation() {
             if (this.currentLocation) {
                 alert("You have choosen " + this.currentLocation)
@@ -83,7 +85,6 @@ export default {
                 }
                 this.$store.commit('setMapData', mapData)
                 alert("You have choosen " + mapData.dir.address)
-
             }
 
         },
@@ -126,7 +127,9 @@ export default {
                                 position: position,
                                 distance: "1.2 km"
                             }
+
                             this.$store.commit('setMapData', mapData)
+                            this.changeFood(false);
                             this.currentLocation = mapData.dir.address
                             this.fitMapBounds();
                         })
@@ -141,6 +144,7 @@ export default {
             this.findLocation((res) => {
                 this.items = res
                 this.result = res
+                this.changeFood(true);
                 this.fitMapBounds();
             })
         },
